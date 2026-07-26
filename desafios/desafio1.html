@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo do curso</title>
+</head>
+<body>
+    <h1 id="inicio">Introdução ao HTML na prática</h1>
+    <hr>
+
+    <h2>Índice</h2>
+        <ul>
+            <li><a href="#apresentando">Apresentando o Curso</a></li>
+            <li><a href="#ferramentas">Ferramentas Utilizadas</a></li>
+            <li><a href="#inspetor">Inspetor de Elementos</a></li>
+            <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+            <li><a href="#tags">Falando sobre Tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenandas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+    <hr>
+    <h2 id="apresentando">Apresentando o Curso</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">Este módulo do curso apresenta o percurso com os tópicos abordados e o objetivo geral que é a instalação e 
+            configuração do ambiente de desenvolvimento, além do funcionamento e uso prático do inspetor de elementos do navegador e a criação da primeira página HTML</p>
+    <hr>
+
+    <h2 id="ferramentas">Ferramentas Utilizadas</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;"><u>Editor</u>: Será utilizado o 
+            <strong>VS Code</strong>, uma IDE<sup>1</sup> para a construção do arquivo HTML. Foi apresentado a página do desenvolvedor para baixar<sup>2</sup> o instalador
+            além de algumas configurações úteis como a instalação da extensão Live Server para testes e verificação da página.</p>
+        <p>1: Integrated Development Environment (Ambiente de Desenvolvimento Integrado)</p>
+        <p>2: <a target="_blank" href="https://code.visualstudio.com/download?_exp_download=fb315fc982">
+            https://code.visualstudio.com/download</a><small><i> - (Link da página)</i></small></p>
+        <img width="400" src="https://code.visualstudio.com/assets/docs/remote/vscode-web/remote-repositories.png" alt="Imagem da tela do VS Code">        
+    <hr>
+
+    <h2 id="inspetor">Inspetor de Elementos</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">Os principais navegadores de internet possuem ferramentas de desenvolvimento (DevTools ou Inspetor de Elementos),
+            que permite visualizar, modificar temporariamente os elementos e seus atributos, além de outros recursos, como monitorar a rede e a performance de uma página, 
+            o que ajuda os desenvolvedores a identificar possíveis falhas.Para ativar o DevTools basta pressionar F12 do teclado ou com o botão da direita do mouse abrir um menu e 
+            selecionar "Inspecionar".</p>
+        <img width=400 src="/objetos/inspetor.png" alt="Imagem do Inspetor de Elementos ativo">
+    <hr>
+
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">Neste módulo é apresentado como criar uma pasta de trabalho, abrir essa pasta com o VS Code e criar o arquivo inicial, 
+            que por convenção é denominado index.html. A estrutura básica de um arquivo:</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;html&gt;: Tag raiz que envolve todo o conteúdo do documento e &lt;/html&gt; é a tag de fechamento.</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;head&gt;: Contêiner para metadados importantes, mas que não são exibidos para o usuário e &lt;/head&gt; é a 
+            tag de fechamento.</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;body&gt;: Define o corpo do documento e contém tudo que é apresentado ao usuário, como títulos, parágrafos, 
+            imagens, tabelas, listas, hiperlinks, etc. &lt;/body&gt; é a tag de fechamento.</p>
+        <img width=400 src="/objetos/estrutura-basica.png" alt="Exemplo da estrutura básica de um documento HTML">
+        <img width=320 src="/objetos/pagina1.png" alt="Visualização no navegador da página em construção com Live Server">
+        <p style="text-indent: 25px; text-align: justify;">Além disso, também foi apresentado o acionamento da extensão Live Server para visualizar no navegador a página que 
+            está sendo construída, inserindo alguns elementos como &lt;title&gt; dentro do elemento &lt;head&gt; para apresentar um título na aba do navegador, e um texto 
+            utilizando &lt;h1&gt; para títulos e &lt;p&gt; para parágrafos dentro do elemento &lt;body&gt;</p>
+    <hr>
+
+    <h2 id="tags">Falando sobre Tags</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">O módulo apresenta com mais detalhes o uso de alguns dos elementos mais comuns e como se comportam:</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;h1&gt;: Define o cabeçalho da página e possui níveis de &lt;h1&gt; para títulos mais importantes até &lt;h6&gt; 
+            para títulos ou subtítulos menos importantes.
+        </p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;p&gt;: Define um parágrafo.</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;i&gt;: Modifica a fonte para itálico.</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;strong&gt;: Modifica a fonte para negrito.</p>
+        <p style="text-indent: 65px; text-align: justify;">Podemos utilizar uma combinação entre essas tags:</p>
+        <img width=400 src="/objetos/codigo1.png" alt="Exemplo de uso das tags <p> e <strong>">
+        <img width=400 src="/objetos/pagina2.png" alt="Visualização do exemplo de uso das tags <p> e <strong>">
+        <p style="text-indent: 65px; text-align: justify;">Notamos que somente a palavra HTML está em negrito.</p>
+        <p style="text-indent: 45px; text-align: justify;">&lt;input&gt;: Define um campo de entrada em que o usuário pode inserir dados, muito utilizado em formulários. É 
+            um caso de elemento HTML que não precisa de uma tag de fechamento.</p>
+        <img width=400 src="/objetos/codigo2.png" alt="Exemplo de uso das tags <input>">
+        <img width=400 src="/objetos/pagina3.png" alt="Visualização da página com uma caixa de entrada definida pela tag <input>">
+        <p style="text-indent: 45px; text-align: justify;">&lt;img&gt;: Usado para incorporar uma imagem na página HTML. Por definição possui dois atributos obrigatórios 
+            que são SRC que especifica o caminho para a imagem e ALT que especifica um texto alternativo caso a imagem não possa ser exibida por algum motivo.
+        </p>
+        <img width=400 src="/objetos/codigo3.png" alt="Exemplo de uso das tags <img> com o caminho SRC para uma endereço na internet onde a imagem esta alocada.">
+        <img width=400 src="/objetos/pagina4.png" alt="Visualização da página com a imagem de um carro esportivo incorporado.">
+    <hr>
+
+    <h2 id="atributos">Atributos das Tags</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">Atributos de Tags são informações extras colocadas dentro da tag de abertura para modificar a maneira como um 
+            elemento é apresentado ou como se comporta dentro da página. Seu formato é nome e valor (por exemplo &lt;p style="color: green;"&gt;) altera a cor das letras.</p>
+        <img width=400 src="/objetos/codigo4.png" alt="Exemplo de uso das tags <p> com atributo STYLE e valor COLOR: green para alterar a cor da fonte para verde">
+        <img width=400 src="/objetos/pagina5.png" alt="Visualização da página com o parágrafo na cor verde.">
+        <p style="text-indent: 25px; text-align: justify;">Existem os Atributos Globais que podem ser utilizados com todos os elementos HTML, e outros atributos mais específicos 
+            utlizados por determinados elementos.
+        </p>
+        <p style="text-indent: 25px; text-align: justify;">Atributos Globais mais comuns: class, id, style.</p>
+        <p style="text-indent: 25px; text-align: justify;">Para elementos específicos como &lt;input&gt;, há uma gama de atributos, alguns específicos para a tag, como por exemplo 
+            TYPE que define o tipo de dado, MAXLENGHT que define o número máximo de caracteres, entre outros.</p>
+        <p style="text-indent: 25px; text-align: justify;">No site <a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a> podemos ter 
+            acesso a informações mais detalhadas sobre tags, atributos e outros recursos para o desenvolvimento HTML.</p>
+    <hr>
+
+    <h2 id="textos">Textos</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">O módulo faz um aprofundamento no uso de elementos HTML para textos, como as tags &lt;h1&gt; para cabeçalhos, 
+            &lt;p&gt; para parágrafos, &lt;strong&gt; para realçar partes do texto em negrito, &lt;i&gt; modificando a fonte para itálico e &lt;blockquote&gt; usado em citações,
+            personalizando a página. Ex:</p>
+        <img width=400 src="/objetos/codigo5.png" alt="Uso dos elementos específicos para textos">
+        <img width=400 src="/objetos/pagina6.png" alt="Visualização da página com exemplos de textos apresentados por difentes tags.">
+    <hr>
+
+    <h2 id="listas">Listas Ordenadas e Listas NÃO Ordenadas</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">As tags &lt;ol&gt; para listas ordenadas e &lt;ul&gt; para listas não ordenadas são muito utilizadas em HTML para agrupar
+            itens relacionados dentro de uma página. Elas não trabalham sozinhas, cada item da lista deverá estar dentro da tag filha &lt;li&gt;item&lt;/li&gt;
+        </p>
+        <img width=400 src="/objetos/codigo6.png" alt="Uso de elementos HTML para formatar listas tanto ordenadas como não ordenadas">
+        <img width=400 src="/objetos/pagina7.png" alt="Visualização da página com listas">
+    <hr>
+
+    <h2 id="links">Links</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">A tag &lt;a&gt; é muito utilizada para direcionar o usuário para outras páginas ou navegar dentro da mesma página. Veremos 
+            dois casos de uso.</p>
+        <p style="text-indent: 45px; text-align: justify;">Primeiro um caso de link para outro site:</p>
+        <img width=400 src="/objetos/codigo7.png" alt="Uso de elementos HTML para formatar listas tanto ordenadas como não ordenadas">
+        <img width=400 src="/objetos/pagina8.png" alt="Visualização da página com listas">
+        <p style="text-indent: 45px; text-align: justify;">Ao aproximarmos o cursor a um dos itens, ele muda para a mãozinha, o que significa que é um <i>hiperlink</i> e quando 
+        clicamos ele direciona para uma nova página. O atributo target dentro da tag &lt;a&gt; diz para o navegador abrir uma nova aba para exibir a página destino.</p>
+        <img width=400 src="/objetos/pagina9.png" alt="Uso de elementos HTML para formatar listas tanto ordenadas como não ordenadas">
+        <img width=400 src="/objetos/pagina10.png" alt="Visualização da página com listas">
+        <p style="text-indent: 45px; text-align: justify;">Note que na página original, o item muda de cor depois de clicado, e foi aberto uma nova aba para o site de destino.</p>
+    <hr>
+
+    <h2 id="referencias">Referências:</h2>
+        <h5><a href="#inicio">(voltar)</a></h5>
+        <p style="text-indent: 25px; text-align: justify;">DIO.me: <a href="https://www.dio.me/">https://www.dio.me/</a></p>
+        <p style="text-indent: 25px; text-align: justify;">VS Code: <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></p>
+        <p style="text-indent: 25px; text-align: justify;">DevTools Google: <a href="https://developer.chrome.com/docs/devtools/overview?hl=pt-br&_gl=1*ego6qm*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjw4JbTBhCoARIsALWUaBu1uRNwbStgj-_co1IKFexLPSEg8wcQCazTaXd_LiALa0XfiswMxh0aAkdmEALw_wcB&gbraid=0AAAAAC1d8f5pBbKKvVjp09n0HKGUy9Wbs#open" target="_blank">
+            https://developer.chrome.com/docs/devtools</a></p>
+        <p style="text-indent: 25px; text-align: justify;">W3 Schools: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+    <hr>
+</body>
+</html>
