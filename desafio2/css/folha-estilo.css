@@ -1,0 +1,105 @@
+/* Parâmetros Gerais */
+html, body {
+    margin: 0;
+}
+body {
+    background-color: rgb(143, 233, 181);
+    display: flex;
+    justify-content: center;
+}
+/* Ajustes nos Links do Menu */
+a:link{
+    text-decoration: none;
+    color: rgb(27, 185, 224);
+
+}
+a:visited{
+    color:blue;
+}
+a:hover{
+    color:crimson;
+    font-size: large;
+}
+/* Parâmetros para o corpo da página */
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    margin: 0 auto;
+    background-color:  rgb(143, 233, 181);
+}
+/* Área Principal */
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+/* Área da barra lateral */
+.menu {
+    position: sticky;
+    top:1px;
+    width: 15%;
+    height: auto;
+    background-color: rgb(143, 233, 181);
+    padding: 10px 20px 0px;
+}
+/* Área do cabeçalho */
+.header {
+    display: flex;
+    background-color:  rgb(143, 233, 181);
+    min-height: 120px;  
+}
+.imagem{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+.lema{
+    display:flex;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+/* Área do conteúdo */
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(129, 221, 105);
+    gap: 10px;
+}
+.box{
+    margin:10px 5px 10px 5px;
+    height: 330px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Área do rodapé */
+.footer {
+    display: flex;
+    background-color: rgb(143, 233, 181);
+    min-height: 150px;
+}
+.adress{
+    width: 25%;
+    padding: 10px;
+}
+.map{
+    width: 25%;
+    padding: 10px;
+}
+.contact{
+    width: 25%;
+    padding: 10px;
+}
+.icons{
+    width: 25%;
+    padding: 10px;
+}
+/* Para todas as imagens */
+img{
+    border-radius: 5px;
+}
