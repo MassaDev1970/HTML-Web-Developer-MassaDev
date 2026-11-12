@@ -67,15 +67,21 @@ a:hover{
 .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: rgb(129, 221, 105);
+    background-color: white;
     gap: 10px;
 }
 .box{
-    margin:10px 5px 10px 5px;
-    height: 330px;
-    background-color: rgba(255,255,255,0.3);
+    margin: 5px;
+    min-height: 330px;
+    background-color: rgba(88, 230, 119, 0.5);
     padding: 5px;
     border-radius: 5px;
+}
+.area{
+    min-height: 300px;
+    margin: 5px;
+    padding: 5px;
+    mix-blend-mode: multiply;
 }
 /* Área do rodapé */
 .footer {
@@ -102,4 +108,36 @@ a:hover{
 /* Para todas as imagens */
 img{
     border-radius: 5px;
+}
+tr{
+    height: 55px;
+}
+tr:nth-child(even){
+    background-color: rgb(20, 230, 107);
+}
+th, td{
+    border: solid 1px gray;
+    padding: 6px;
+}
+.form-1{
+    display: grid;
+    margin:5px;
+    padding: 5px;
+}
+.form-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+input{
+    height: 20px;
+}
+button{
+    width: 220px;
+    height: 45px;
+}
+button:hover{
+    font-size: large;
+    background-color: blue;
+    color: whitesmoke;
 }
